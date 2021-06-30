@@ -2,8 +2,10 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: flagger
-  namespace: linkerd
+  namespace: flux-system
 spec:
+  releaseName: flagger
+  targetNamespace: linkerd
   chart:
     spec:
       valuesFile: ./flagger.values.yaml
