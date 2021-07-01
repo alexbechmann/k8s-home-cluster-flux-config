@@ -16,6 +16,7 @@ spec:
   values:
     installCRDs: true
   install: 
+    createNamespace: true
     remediation:
       retries: 100
   upgrade: 
