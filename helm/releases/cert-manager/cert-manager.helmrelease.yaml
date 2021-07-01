@@ -4,7 +4,7 @@ metadata:
   name: cert-manager
   namespace: flux-system
 spec:
-  releaseName: cert-manager2
+  releaseName: cert-manager
   targetNamespace: cert-manager
   chart:
     spec:
@@ -15,5 +15,10 @@ spec:
         name: jetstack
   values:
     installCRDs: true
-  install: {}
+  install: 
+    remediation:
+      retries: 100
+  upgrade: 
+    remediation:
+      retries: 100
   interval: 10m0s
