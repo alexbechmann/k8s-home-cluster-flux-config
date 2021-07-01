@@ -16,4 +16,4 @@ spec:
   values:
     installCRDs: true
   install: {}
-  interval: 1m0s
+  interval: 10m0s
