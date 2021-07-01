@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   releaseName: flagger
-  targetNamespace: linkerd
+  targetNamespace: flagger
   chart:
     spec:
       chart: flagger
