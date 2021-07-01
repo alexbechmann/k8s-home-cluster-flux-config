@@ -1,4 +1,0 @@
-# crd:
-#   create: false
-meshProvider: linkerd
-metricsServer: http://linkerd-prometheus:9090

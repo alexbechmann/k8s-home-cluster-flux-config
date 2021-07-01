@@ -10,8 +10,14 @@ spec:
     spec:
       valuesFile: ./flagger.values.yaml
       chart: flagger
+      version: 1.12.1
       sourceRef:
         kind: HelmRepository
         name: flagger
+  values:
+    # crd:
+    #   create: false
+    meshProvider: linkerd
+    metricsServer: http://linkerd-prometheus:9090
   install: {}
   interval: 1m0s
