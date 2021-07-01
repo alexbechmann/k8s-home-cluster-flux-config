@@ -14,33 +14,33 @@ spec:
         kind: HelmRepository
         name: bitnami
   values:
-  configInline:
-    # The address-pools section lists the IP addresses that MetalLB is
-    # allowed to allocate, along with settings for how to advertise
-    # those addresses over BGP once assigned. You can have as many
-    # address pools as you want.
-    address-pools:
-      - name: default
-        # Protocol can be used to select how the announcement is done.
-        # Supported values are bgp and layer2.
-        protocol: layer2
-        # A list of IP address ranges over which MetalLB has
-        # authority. You can list multiple ranges in a single pool, they
-        # will all share the same settings. Each range can be either a
-        # CIDR prefix, or an explicit start-end range of IPs.
-        addresses:
-          - 192.168.1.20-192.168.1.29
+    configInline:
+      # The address-pools section lists the IP addresses that MetalLB is
+      # allowed to allocate, along with settings for how to advertise
+      # those addresses over BGP once assigned. You can have as many
+      # address pools as you want.
+      address-pools:
+        - name: default
+          # Protocol can be used to select how the announcement is done.
+          # Supported values are bgp and layer2.
+          protocol: layer2
+          # A list of IP address ranges over which MetalLB has
+          # authority. You can list multiple ranges in a single pool, they
+          # will all share the same settings. Each range can be either a
+          # CIDR prefix, or an explicit start-end range of IPs.
+          addresses:
+            - 192.168.1.20-192.168.1.29
 
-  controller:
-    image:
-      registry: docker.io
-      repository: metallb/controller
-      tag: v0.9
+    controller:
+      image:
+        registry: docker.io
+        repository: metallb/controller
+        tag: v0.9
 
-  speaker:
-    image:
-      registry: docker.io
-      repository: metallb/speaker
-      tag: v0.9
+    speaker:
+      image:
+        registry: docker.io
+        repository: metallb/speaker
+        tag: v0.9
   install: {}
   interval: 1m0s
