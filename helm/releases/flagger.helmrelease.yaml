@@ -8,7 +8,6 @@ spec:
   targetNamespace: linkerd
   chart:
     spec:
-      valuesFile: ./flagger.values.yaml
       chart: flagger
       version: 1.12.1
       sourceRef:
