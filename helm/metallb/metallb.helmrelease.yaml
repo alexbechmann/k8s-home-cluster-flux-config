@@ -42,5 +42,6 @@ spec:
         registry: docker.io
         repository: metallb/speaker
         tag: v0.9
-  install: {}
+  install: 
+    createNamespace: true
   interval: 10m0s

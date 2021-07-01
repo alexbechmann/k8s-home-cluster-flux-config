@@ -18,5 +18,6 @@
 #     #   create: false
 #     meshProvider: linkerd
 #     metricsServer: http://linkerd-prometheus:9090
-#   install: {}
+  # install: 
+  #   createNamespace: true
 #   interval: 1m0s
