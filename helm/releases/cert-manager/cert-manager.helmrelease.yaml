@@ -6,6 +6,7 @@ metadata:
 spec:
   releaseName: cert-manager
   targetNamespace: cert-manager
+  storageNamespace: cert-manager
   chart:
     spec:
       chart: cert-manager
@@ -15,11 +16,11 @@ spec:
         name: jetstack
   values:
     installCRDs: true
-  install: 
+  install:
     createNamespace: true
     remediation:
       retries: 100
-  upgrade: 
+  upgrade:
     remediation:
       retries: 100
   interval: 10m0s
