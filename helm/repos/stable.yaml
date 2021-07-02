@@ -4,5 +4,5 @@ metadata:
   name: stable
   namespace: flux-system
 spec:
-  url: stable https://charts.helm.sh/stable
+  url: https://charts.helm.sh/stable
   interval: 10m
