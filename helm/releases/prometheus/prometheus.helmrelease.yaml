@@ -1,0 +1,72 @@
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: prometheus
+#   namespace: flux-system
+# spec:
+#   releaseName: prometheus
+#   targetNamespace: prometheus
+#   storageNamespace: prometheus
+#   chart:
+#     spec:
+#       chart: prometheus
+#       version: 1.0.2
+#       sourceRef:
+#         kind: HelmRepository
+#         name: bitnami
+#   values:
+#     # kube-state-metrics:
+#     # image:
+#     #   repository: 4k1l/kube-state-metrics-arm
+#     #   tag: v1.9.3
+#     # image:
+#     #   repository: eddiezane/kube-state-metrics
+#     #   tag: v1.9.7
+
+#     # kubelet:
+#     #   enabled: true
+#     #   serviceMonitor:
+#     #     https: true
+
+#     # kubeControllerManager:
+#     #   enabled: true
+#     #   serviceMonitor:
+#     #     https: true
+
+#     # kubeScheduler:
+#     #   enabled: true
+#     #   serviceMonitor:
+#     #     https: true
+
+#     # kubeProxy:
+#     #   enabled: true
+#     #   serviceMonitor:
+#     #     https: true
+
+#     # prometheus:
+#     #   prometheusSpec:
+#     #     retentionSize: "0.5GiB"
+#     #     retention: "1d"
+#     #     scrapeInterval: 240s
+
+#     # resources:
+#     #   requests:
+#     #     cpu: 200m
+#     #     memory: 400Mi
+#     #   limits:
+#     #     cpu: 200m
+#     #     memory: 400Mi
+
+#     # grafana:
+#     #   enabled: true
+
+#     # alertmanager:
+#     #   enabled: false
+
+#     # server:
+#     #   global:
+#     #     scrape_interval: 30s
+
+#   install:
+#     createNamespace: true
+#   interval: 10m0s
