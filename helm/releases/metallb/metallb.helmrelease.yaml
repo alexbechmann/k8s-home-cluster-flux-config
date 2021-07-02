@@ -6,6 +6,7 @@ metadata:
 spec:
   releaseName: metallb
   targetNamespace: metallb
+  storageNamespace: metallb
   chart:
     spec:
       chart: metallb
@@ -42,6 +43,6 @@ spec:
         registry: docker.io
         repository: metallb/speaker
         tag: v0.9
-  install: 
+  install:
     createNamespace: true
   interval: 10m0s
