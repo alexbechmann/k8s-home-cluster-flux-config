@@ -23,7 +23,7 @@ spec:
       accessMode: ReadWriteOnce
       nfs:
         server: 192.168.1.60
-        path: /mnt/disk1/charts
+        path: /mnt/disk1/k8sdata/charts
     env:
       open:
         # storage backend, can be one of: local, alibaba, amazon, google, microsoft, oracle
