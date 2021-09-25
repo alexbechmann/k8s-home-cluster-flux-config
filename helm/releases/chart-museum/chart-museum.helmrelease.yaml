@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: chartmuseum
-      version: 0.13.1
+      version: 3.1.0
       sourceRef:
         kind: HelmRepository
         name: chartmuseum
