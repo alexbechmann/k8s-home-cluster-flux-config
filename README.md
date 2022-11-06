@@ -5,5 +5,5 @@
 <https://fluxcd.io/docs/get-started/>
 
 ```bash
-flux bootstrap github --owner=alexbechmann --repository=k8s-home-cluster-flux-config --private=false --personal=true --branch master
+flux bootstrap github --owner=alexbechmann --repository=k8s-ans-cluster-flux-config --private=false --personal=true --branch master
 ```
